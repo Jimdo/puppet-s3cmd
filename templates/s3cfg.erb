@@ -1,6 +1,6 @@
 [default]
-access_key = <%= aws_access_key_id %>
-bucket_location = <%= aws_region %>
+access_key = <%= @aws_access_key_id %>
+bucket_location = <%= @aws_region %>
 cloudfront_host = cloudfront.amazonaws.com
 cloudfront_resource = /2010-07-15/distribution
 default_mime_type = binary/octet-stream
@@ -28,7 +28,7 @@ proxy_port = 0
 recursive = False
 recv_chunk = 4096
 reduced_redundancy = False
-secret_key = <%= aws_secret_access_key %>
+secret_key = <%= @aws_secret_access_key %>
 send_chunk = 4096
 simpledb_host = sdb.amazonaws.com
 skip_existing = False
